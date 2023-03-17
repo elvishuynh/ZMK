@@ -14,11 +14,24 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
+				// -----------------------------------------------------------------------------------------
+				// |  ESC  |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   | BSPC  |
+				// |  TAB  |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   |  '    |
+				// | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  ,   |  .   |   /   |  RET  |
+				// | LCTL  | LGUI | LALT |  \   | LOWR | SPC  |  RAIS | LARW | DARW | UARW  |  RARW |  P/P  |
+
+				// -----------------------------------------------------------------------------------------
+				// |  ESC  |  Q   |  W   |  E   |  R   |  T   |   B   |  V    |  C   |  X   |   Z   |  LSFT |
+				// |   Y   |  U   |  I   |  O   |  P   | BSPC |  ENT  |  /    |  .   |  ,   |   M   |   N   |
+				// |  TAB  |  A   |  S   |  D   |  F   |  G   |  SPC  |  LOWR |  \   | LALT | LGUI  |  LCTL |
+				// |   H   |  J   |  K   |  L   | SCLN | QUTE |  P/P  | RARW | UARW | DARW  |  LARW | RAISE |
+
+
 			bindings = <
-				&kp ESC   &kp Q    &kp W    &kp F    &kp P &kp G     &kp J &kp L    &kp U     &kp Y    &kp SEMI  &kp RET
-				&lt BSPC  &kp A    &kp R    &kp S    &kp T &kp D     &kp H &kp N    &kp E     &kp I    &kp O  &kp SQT
-				&kp LSHFT &kp Z    &kp X    &kp C    &kp V &kp B     &kp K &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp UP
-				&kp LCTL  &kp LALT &kp LALT &kp BSLH &mo 2 &kp SPACE &lt 1 SPACE    &kp LEFT  &kp LEFT &kp RIGHT &kp DOWN &kp C_PP
+				&kp ESC   &kp Q    &kp W    &kp F    &kp P &kp G     &kp J &kp L    &kp U     &kp Y     &kp SEMI  &kp RET
+				&lt BSPC  &kp A    &kp R    &kp S    &kp T &kp D     &kp H &kp N    &kp E     &kp I     &kp O     &kp SQT
+				&kp LSHFT &kp Z    &kp X    &kp C    &kp V &kp B     &kp K &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp UP
+				&kp LCTL  &kp LALT &kp LALT &kp BSLH &mo 2 &kp SPACE &mo 1 &kp LEFT &kp LEFT  &kp RIGHT &kp DOWN  &kp C_PP
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
